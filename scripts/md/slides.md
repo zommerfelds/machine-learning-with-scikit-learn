@@ -12,7 +12,6 @@ subtitle: Basic problem setting
 
 title: What is scikit-learn?
 
-- Python library
 - Simple and efficient tools for data mining and data analysis
 - Built on NumPy, SciPy, and matplotlib
 - Open source, BSD license
@@ -20,7 +19,14 @@ title: What is scikit-learn?
 
 <br>
 
-![scikit-learn](images/scikitlearn.png)
+## Reasons we like scikit-learn ##
+<br>
+<img style="float: right" src="images/scikitlearn.png" />
+
+- Good documentation
+- Easy to use
+- Consistent interface
+- Covers most machine-learning tasks
 
 ---
 
@@ -69,11 +75,3 @@ class: image
 
 ![CPI predicted vs actual](images/cpi_predicted_vs_actual.png)
 
----
-
-title: Why we like scikit-learn
-
-- Good documentation
-- Easy to use
-- Consistent interface
-- Covers most machine-learning tasks
