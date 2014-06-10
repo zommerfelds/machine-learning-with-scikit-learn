@@ -305,13 +305,14 @@ slides > slide:not(.nobackground):before {
   position: absolute;
   bottom: 20px;
   left: 60px;
-  background: url(../../images/google_developers_icon_128.png) no-repeat 0 50%;
-  -webkit-background-size: 30px 30px;
-  -moz-background-size: 30px 30px;
-  -o-background-size: 30px 30px;
-  background-size: 30px 30px;
+  background: url(../../images/gallop_name_logo.png) no-repeat;
+  -webkit-background-size: 100px 18px;
+  -moz-background-size: 100px 18px;
+  -o-background-size: 100px 18px;
+  background-size: 100px 18px;
   padding-left: 40px;
-  height: 30px;
+  height: 18px;
+  width: 100px;
   line-height: 1.9;
 }
 /* line 147, ../scss/default.scss */
@@ -1237,7 +1238,7 @@ article.smaller q:before, article.smaller q:after {
 
 /* line 826, ../scss/default.scss */
 .thank-you-slide {
-  background: #4387fd !important;
+  background: #a24e95 !important;
   color: white;
 }
 /* line 830, ../scss/default.scss */
