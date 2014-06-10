@@ -43,25 +43,115 @@ URL: https://code.google.com/p/io-2012-slides
   </hgroup>
 </slide>
 
-{% for slide in slides %}
-<slide {% if slide.class %}class="{{- slide.class -}}"{% endif %} {% if slide.image %}style="background-image: url({{- slide.image -}})"{% endif %}>
-  {% if 'segue' in slide.class %}
-    <aside class="gdbar"><img src="images/google_developers_icon_128.png"></aside>
-    <hgroup class="auto-fadein">
-      <h2>{{- slide.title -}}</h2>
-      <h3>{{- slide.subtitle -}}</h3>
-    </hgroup>
-  {% else %}
+
+<slide  >
+  
     <hgroup>
-      <h2>{{- slide.title -}}</h2>
-      <h3>{{- slide.subtitle -}}</h3>
+      <h2>Machine learning</h2>
+      <h3>Basic problem setting</h3>
     </hgroup>
-    <article {% if slide.content_class %}class="{{- slide.content_class -}}"{% endif %}>
-    {{- slide.content -}}
-    </article>
- {% endif %}
+    <article ><ul>
+<li>Given: set of n samples of data</li>
+<li>Goal: predict properties of unknown data</li>
+</ul>
+<p><br></p>
+<p><img alt="adaboost" src="images/plot_adaboost_twoclass_1.png" /></p></article>
+ 
 </slide>
-{% endfor %}
+
+<slide  >
+  
+    <hgroup>
+      <h2>What is scikit-learn?</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Python library</li>
+<li>Simple and efficient tools for data mining and data analysis</li>
+<li>Built on NumPy, SciPy, and matplotlib</li>
+<li>Open source, BSD license</li>
+<li>Under active development</li>
+</ul>
+<p><br></p>
+<p><img alt="scikit-learn" src="images/scikitlearn.png" /></p></article>
+ 
+</slide>
+
+<slide class="image" >
+  
+    <hgroup>
+      <h2></h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="CPI predicted vs actual" src="images/ml_map_small.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Example - Support Vector Machine</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+from sklearn import svm
+
+train_X = ...  # load sample inputs
+train_y = ...  # load sample outputs
+to_predict = ...  # we want to predict the output of this value
+
+clf = svm.SVC()  # create a classifier
+
+clf.fit(train_X, train_y)  # train the classifier
+
+prediction = clf.predict(to_predict)  # predict our unknown output
+</pre>
+
+<p><br></p>
+<p><a href="http://scikit-learn.org/stable/documentation.html">scikit-learn.org/stable/documentation.html</a></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>scikit-learn @ Gallop Labs</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Optimization of Facebook campaigns</li>
+<li>Regression to predict certain outputs of a campaign</li>
+</ul>
+<p><img alt="Goals dashboard" src="images/goals_dashboard2.png" />
+<img alt="Audience breakdown" src="images/audience_breakdown2.png" /></p></article>
+ 
+</slide>
+
+<slide class="image" >
+  
+    <hgroup>
+      <h2>CPI predictions</h2>
+      <h3></h3>
+    </hgroup>
+    <article class="flexbox vcenter"><p><img alt="CPI predicted vs actual" src="images/cpi_predicted_vs_actual.png" /></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
+      <h2>Why we like scikit-learn</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><ul>
+<li>Good documentation</li>
+<li>Easy to use</li>
+<li>Consistent interface</li>
+<li>Covers most machine-learning tasks</li>
+</ul></article>
+ 
+</slide>
+
 
 <slide class="thank-you-slide segue nobackground">
   <aside class="gdbar right"><img src="images/google_developers_icon_128.png"></aside>

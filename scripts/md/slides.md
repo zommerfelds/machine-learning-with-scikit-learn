@@ -1,78 +1,79 @@
-title: Slide Title
-subtitle: Subtitle
+title: Machine learning
+subtitle: Basic problem setting
+
+- Given: set of n samples of data
+- Goal: predict properties of unknown data
+
+<br>
+
+![adaboost](images/plot_adaboost_twoclass_1.png)
+
+---
+
+title: What is scikit-learn?
+
+- Python library
+- Simple and efficient tools for data mining and data analysis
+- Built on NumPy, SciPy, and matplotlib
+- Open source, BSD license
+- Under active development
+
+<br>
+
+![scikit-learn](images/scikitlearn.png)
+
+---
+
+content_class: flexbox vcenter
 class: image
 
-![Mobile vs desktop users](image.png)
+![CPI predicted vs actual](images/ml_map_small.png)
 
 ---
 
-title: Segue Slide
-subtitle: Subtitle
-class: segue dark nobackground
+title: Example - Support Vector Machine
 
----
+<pre class="prettyprint" data-lang="python">
+from sklearn import svm
 
-title: Agenda
-class: big
-build_lists: true
+train_X = ...  # load sample inputs
+train_y = ...  # load sample outputs
+to_predict = ...  # we want to predict the output of this value
 
-Things we'll cover (list should build):
+clf = svm.SVC()  # create a classifier
 
-- Bullet1
-- Bullet2
-- Bullet3
+clf.fit(train_X, train_y)  # train the classifier
 
----
-
-title: Today
-class: nobackground fill
-
-![Many kinds of devices.](image.png)
-
-<footer class="source">source: place source info here</footer>
-
----
-
-title: Big Title Slide
-class: title-slide
-
----
-
-title: Code Example
-
-Media Queries are sweet:
-
-<pre class="prettyprint" data-lang="css">
-@media screen and (max-width: 640px) {
-  #sidebar { display: none; }
-}
+prediction = clf.predict(to_predict)  # predict our unknown output
 </pre>
 
----
+<br>
 
-title: Once more, with JavaScript
-
-<pre class="prettyprint" data-lang="javascript">
-function isSmall() {
-  return window.matchMedia("(min-device-width: ???)").matches;
-}
-
-function hasTouch() {
-  return Modernizr.touch;
-}
-
-function detectFormFactor() {
-  var device = DESKTOP;
-  if (hasTouch()) {
-    device = isSmall() ? PHONE : TABLET;
-  }
-  return device;
-}
-</pre>
+[scikit-learn.org/stable/documentation.html](http://scikit-learn.org/stable/documentation.html)
 
 ---
 
-title: Centered content
+title: scikit-learn @ Gallop Labs
+
+- Optimization of Facebook campaigns
+- Regression to predict certain outputs of a campaign
+
+![Goals dashboard](images/goals_dashboard2.png)
+![Audience breakdown](images/audience_breakdown2.png)
+
+---
+
+title: CPI predictions
 content_class: flexbox vcenter
+class: image
 
-This content should be centered!
+![CPI predicted vs actual](images/cpi_predicted_vs_actual.png)
+
+---
+
+title: Why we like scikit-learn
+
+- Good documentation
+- Easy to use
+- Consistent interface
+- Covers most machine-learning tasks
