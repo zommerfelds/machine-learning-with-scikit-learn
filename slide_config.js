@@ -2,7 +2,7 @@ var SLIDE_CONFIG = {
   // Slide settings
   settings: {
     title: 'Machine Learning<br>With scikit-learn',
-    //subtitle: 'Subtitle Goes Here',
+    subtitle: 'Gallop Labs',
     eventInfo: {
       title: 'Python Toronto Meetup',
       date: '10.6.2014'
