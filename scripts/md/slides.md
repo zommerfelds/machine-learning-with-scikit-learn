@@ -1,10 +1,8 @@
 title: Machine learning
 subtitle: Basic problem setting
 
-- Given: set of n samples of data
-- Goal: predict properties of unknown data
-
-<br>
+- Given: N samples of data
+- Goal: predict properties of unseen data
 
 ![adaboost](images/plot_adaboost_twoclass_1.png)
 
@@ -19,14 +17,7 @@ title: What is scikit-learn?
 
 <br>
 
-## Reasons we like scikit-learn ##
-
-<img style="float: right" src="images/scikitlearn.png" />
-
-- Good documentation
-- Easy to use
-- Consistent interface
-- Covers most machine-learning tasks
+![](images/scikitlearn.png)
 
 ---
 
