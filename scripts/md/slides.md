@@ -12,7 +12,6 @@ subtitle: Basic problem setting
 
 title: What is scikit-learn?
 
-- Python library
 - Simple and efficient tools for data mining and data analysis
 - Built on NumPy, SciPy, and matplotlib
 - Open source, BSD license
