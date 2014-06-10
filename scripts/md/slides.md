@@ -15,7 +15,6 @@ title: What is scikit-learn?
 - Open source, BSD license
 - Under active development
 
-<br>
 
 ![](images/scikitlearn.png)
 
