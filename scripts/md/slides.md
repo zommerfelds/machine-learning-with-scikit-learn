@@ -49,6 +49,28 @@ prediction = clf.predict(to_predict)  # predict our unknown output
 
 ---
 
+title: Example - Decision Tree
+
+<pre class="prettyprint" data-lang="python">
+from sklearn import tree
+
+train_X = ...  # load sample inputs
+train_y = ...  # load sample outputs
+to_predict = ...  # we want to predict the output of this value
+
+clf = tree.DecisionTreeClassifier()  # create a classifier
+
+clf.fit(train_X, train_y)  # train the classifier
+
+prediction = clf.predict(to_predict)  # predict our unknown output
+</pre>
+
+<br>
+
+[scikit-learn.org/stable/documentation.html](http://scikit-learn.org/stable/documentation.html)
+
+---
+
 title: scikit-learn @ Gallop Labs
 
 - Optimization of Facebook campaigns

@@ -112,6 +112,31 @@ prediction = clf.predict(to_predict)  # predict our unknown output
 <slide  >
   
     <hgroup>
+      <h2>Example - Decision Tree</h2>
+      <h3></h3>
+    </hgroup>
+    <article ><pre class="prettyprint" data-lang="python">
+from sklearn import tree
+
+train_X = ...  # load sample inputs
+train_y = ...  # load sample outputs
+to_predict = ...  # we want to predict the output of this value
+
+clf = tree.DecisionTreeClassifier()  # create a classifier
+
+clf.fit(train_X, train_y)  # train the classifier
+
+prediction = clf.predict(to_predict)  # predict our unknown output
+</pre>
+
+<p><br></p>
+<p><a href="http://scikit-learn.org/stable/documentation.html">scikit-learn.org/stable/documentation.html</a></p></article>
+ 
+</slide>
+
+<slide  >
+  
+    <hgroup>
       <h2>scikit-learn @ Gallop Labs</h2>
       <h3></h3>
     </hgroup>
